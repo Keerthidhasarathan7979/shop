@@ -1,0 +1,131 @@
+﻿<Window x:Class="Billing.Wishlist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Billing"
+        xmlns:lang="clr-namespace:Billing.properties.language"
+        mc:Ignorable="d"
+        Title="Wishlist"  Height="650" Width="900" Background="LightGray" MaxHeight="650" MaxWidth="900">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Orange"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+    </Window.Resources>
+    <Border BorderBrush="White" BorderThickness="10" Margin="50">
+        <Border.Effect>
+            <DropShadowEffect Color="DarkGoldenrod" ShadowDepth="10" Opacity="0.4"></DropShadowEffect>
+        </Border.Effect>
+        <Grid  Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" ></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+              
+                <Label Content="{x:Static lang:Resource1.mywish}" FontWeight="Bold" Margin="13,0,0,0" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.items}" FontWeight="Medium" Margin="95,4,0,0"  FontSize="9"></Label>
+                <Image Source="C:\Users\USER\OneDrive\Pictures\Screenshot 2023-05-27 121246.png" Margin="10,20,20,0"></Image>
+                <Image Source=" C:\Users\USER\OneDrive\Pictures\Camera Roll\Screenshot 2023-05-28 141607.png" Margin="0,15,0,0" Grid.Row="1"></Image>
+                <Image Source="C:\Users\USER\OneDrive\Pictures\Screenshot 2023-06-01 213006.png" Grid.Row="2" Margin="5,10,0,0"></Image>
+                <Image Source="C:\Users\USER\OneDrive\Pictures\Screenshot 2023-05-28 141103.png" Grid.Row="3" Margin="0,10,0,0"></Image>
+                <Image Source="C:\Users\USER\OneDrive\Pictures\Screenshot 2023-05-28 142622.png" Grid.Row="4" Margin="0,31,10,75" Grid.RowSpan="2"></Image>
+                <Image Source="C:\Users\USER\OneDrive\Pictures\Screenshot 2023-05-28 140935.png" Grid.Row="5" Margin="0,25,0,10" Grid.RowSpan="2"></Image>
+
+
+            </Grid>
+
+
+
+
+
+
+
+
+            <Grid Grid.Column="1" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="360"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Label Content="{x:Static lang:Resource1.wishp}" Grid.Row="0" Grid.Column="1" Margin="125,0,0,0" FontSize="13" FontWeight="Normal" ></Label>
+                <Label Content="{x:Static lang:Resource1.pub}" Grid.Row="0" Grid.Column="1" Margin="125,20,0,0" FontSize="12" FontWeight="Normal"></Label>
+                <Label Content="{x:Static lang:Resource1.instk}" Grid.Row="1" Margin="0,10,0,2" FontSize="14" Foreground="Green" FontWeight="Normal" ></Label>
+                <Label Content="{x:Static lang:Resource1.phone}" Grid.Row="1" Margin="0,35,0,0" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.rate1}" Grid.Row="1" Margin="0,60,0,0" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.off1}" Foreground="Green" Grid.Row="1" Margin="60,60,0,0" FontSize="14"></Label>
+
+
+
+
+                <Label Content="{x:Static lang:Resource1.instk}" Grid.Row="2" Margin="0,10,0,2" FontSize="14" Foreground="Green" FontWeight="Normal" ></Label>
+                <Label Content="{x:Static lang:Resource1.watch}" Grid.Row="2" Margin="0,35,0,0"  FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.rate2}" Grid.Row="2" Margin="0,60,0,0" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.off2}" Foreground="Green" Grid.Row="2" Margin="60,60,0,0" FontSize="14"></Label>
+
+
+
+                <Label Content="{x:Static lang:Resource1.instk}" Grid.Row="3" Margin="0,10,0,2" FontSize="14" Foreground="Green" FontWeight="Normal" ></Label>
+                <Label Content="{x:Static lang:Resource1.headset}" Grid.Row="3" Margin="0,35,0,0" Grid.ColumnSpan="2" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.rate3}" Grid.Row="3" Margin="0,60,0,0" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.off3}" Foreground="Green" Grid.Row="3" Margin="60,60,0,0" FontSize="14"></Label>
+
+                <Label Content="{x:Static lang:Resource1.instk}" Grid.Row="4" Margin="0,10,0,2" FontSize="14" Foreground="Green" FontWeight="Normal" ></Label>
+                <Label Content="{x:Static lang:Resource1.bluetooth}" Grid.Row="4" Margin="0,35,0,0" Grid.ColumnSpan="2" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.rate4}" Grid.Row="4" Margin="0,60,0,0" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.off4}" Foreground="Green" Grid.Row="4" Margin="60,60,0,0" FontSize="14"></Label>
+
+                <Label Content="{x:Static lang:Resource1.instk}" Grid.Row="5" Margin="0,10,0,2" FontSize="14" Foreground="Green" FontWeight="Normal" ></Label>
+                <Label Content="{x:Static lang:Resource1.card}" Grid.Row="5" Margin="0,35,0,0" Grid.ColumnSpan="2" FontSize="14"></Label>
+                <Label Content="{x:Static lang:Resource1.rate4}" Grid.Row="5" Margin="0,60,0,0" FontSize="14"></Label>
+
+
+                <Button Grid.Column="2" Grid.Row="1" Margin="130,33,20,20" Content="{x:Static lang:Resource1.atc}"></Button>
+                <Button Grid.Column="2" Grid.Row="2" Margin="130,33,20,20" Content="{x:Static lang:Resource1.atc}"></Button>
+                <Button Grid.Column="2" Grid.Row="3" Margin="130,33,20,20" Content="{x:Static lang:Resource1.atc}"></Button>
+                <Button Grid.Column="2" Grid.Row="4" Margin="130,33,20,20" Content="{x:Static lang:Resource1.atc}"></Button>
+                <Button Grid.Column="2" Grid.Row="5" Margin="130,33,20,20" Content="{x:Static lang:Resource1.atc}"></Button>
+
+
+
+
+
+
+
+            </Grid>
+
+
+        </Grid>
+    </Border>
+
+</Window>
